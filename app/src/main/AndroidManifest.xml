@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.triples">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TripleS"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".UpdateUserActivity"></activity>
+        <activity android:name=".UserActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity
+            android:name=".WebsiteActivity"
+            android:label="@string/title_activity_website"
+            android:theme="@style/Theme.TripleS.NoActionBar" />
+        <activity android:name=".CreditCardActivity" />
+        <activity android:name=".CashActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".BarcodeActivity" />
+        <activity android:name=".InternetConnectivityActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

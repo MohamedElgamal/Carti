@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/cart_product_image_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:src="@drawable/product_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.12" />
+
+    <TextView
+        android:id="@+id/cart_product_name_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/cart_product_image_item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.35"
+        tools:text="Samsung Galaxy S8" />
+
+    <TextView
+        android:id="@+id/cart_product_price_per_product_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"
+        app:layout_constraintStart_toEndOf="@id/cart_product_name_item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.22"
+        tools:text="15000.00EGP" />
+
+    <TextView
+        android:id="@+id/cart_product_total_price_product_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cart_product_price_per_product_item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.22"
+        tools:text="15000.00EGP" />
+
+    <TextView
+        android:id="@+id/cart_product_number_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@id/cart_product_image_item"
+        app:layout_constraintTop_toBottomOf="@id/cart_product_name_item"
+        app:layout_constraintWidth_percent="0.22"
+        tools:text="#1" />
+
+    <ImageView
+        android:id="@+id/cart_product_add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/add_ic"
+        app:layout_constraintStart_toStartOf="@id/cart_product_price_per_product_item"
+        app:layout_constraintTop_toBottomOf="@id/cart_product_price_per_product_item" />
+
+    <TextView
+        android:id="@+id/cart_product_quantity_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/cart_product_add_item"
+        app:layout_constraintStart_toEndOf="@id/cart_product_add_item"
+        app:layout_constraintTop_toTopOf="@id/cart_product_add_item"
+        app:layout_constraintVertical_bias="1.2" />
+
+    <ImageView
+        android:id="@+id/cart_product_remove_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/remove_ic"
+        app:layout_constraintStart_toEndOf="@id/cart_product_quantity_item"
+        app:layout_constraintTop_toBottomOf="@id/cart_product_price_per_product_item" />
+
+    <View
+        android:id="@+id/cart_product_border_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighter_grey"
+    tools:context=".UserActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="35dp"
+        android:background="@drawable/white_bottom_rounded_shape">
+
+        <ImageView
+            android:id="@+id/user_account_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.3"
+            tools:src="@drawable/username_ic" />
+
+
+        <TextView
+            android:id="@+id/user_name_hint_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/volkhov"
+            android:text="@string/username"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/user_username_text"
+            app:layout_constraintTop_toBottomOf="@id/user_account_image"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <TextView
+            android:id="@+id/user_username_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outer_button_corner"
+            android:fontFamily="@font/volkhov"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name_hint_text"
+            app:layout_constraintWidth_percent="0.7"
+            tools:text="Mohamed Elgamal" />
+
+        <TextView
+            android:id="@+id/user_email_hint_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/volkhov"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/user_username_text"
+            app:layout_constraintTop_toBottomOf="@id/user_username_text"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <TextView
+            android:id="@+id/user_email_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outer_button_corner"
+            android:fontFamily="@font/volkhov"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_email_hint_text"
+            app:layout_constraintWidth_percent="0.7"
+            tools:text="devmohamedelgamal@gmail.com" />
+
+        <TextView
+            android:id="@+id/user_join_date_hint_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/volkhov"
+            android:text="@string/join_date"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/user_username_text"
+            app:layout_constraintTop_toBottomOf="@id/user_email_text"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <TextView
+            android:id="@+id/user_join_date_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outer_button_corner"
+            android:fontFamily="@font/volkhov"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_join_date_hint_text"
+            app:layout_constraintWidth_percent="0.7"
+            tools:text="2021-07-12T17:43:02.000000Z" />
+
+<!--        <Button-->
+<!--            android:id="@+id/user_update_data_btn"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:text="@string/update_user"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/user_join_date_text"-->
+<!--            app:layout_constraintWidth_percent="0.7" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
